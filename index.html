@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HOME PAGE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Style/Home.css'>
+    <script src="JS/home.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1><a href="Home.html"><ion-icon name="game-controller-outline"></ion-icon>Game Plus</a></h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon"><ion-icon onclick="change_icon()" id="icon-menu"
+                        name="menu-outline"></ion-icon></label>
+                <ul class="menu">
+                    <li><a id="current" href="index.html">Home</a></li>
+                    <li><a href="Game.html">Game</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <div class="form-search">
+                <form action="">
+                    <input type="search" placeholder="search...">
+                    <button>Tìm kiếm</button>
+                </form>
+            </div>
+        </header>
+        <article>
+            <div class="about">
+                <h2><ion-icon name="game-controller-outline"></ion-icon>Game Plus</h2>
+                <h1>START YOUR EXPERIENCE NOW</h1>
+                <p>Play it once and you'll be addicted</p>
+                <a id="btn-1" href="">Play Now</a>
+                <label onclick="showlogin()" id="btn-2" for="out-login">Sign In</label>
+            </div>
+
+
+            <div class="new-game-banner">
+                <h1 style="text-align:center">NEW GAME</h1>
+                <div class="content-banner">
+                    <div class="banner">
+                        <div class="slide-show" id="slide-show">
+                            <div class="img">
+                                <img src="Images/banner/shooting battlefield.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+                            </div>
+                            <div class="img">
+                                <img src="Images/banner/crazy-arcade.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+
+                            </div>
+                            <div class="img">
+                                <img src="Images/banner/furry-frenzy.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+
+                            </div>
+                            <div class="img">
+                                <img src="Images/banner/rumble.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+
+                            </div>
+                            <div class="img">
+                                <img src="Images/banner/townkins.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+
+                            </div>
+                            <div class="img">
+                                <img src="Images/banner/shooting battlefield.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+
+                            </div>
+                            <div class="img">
+                                <img src="Images/banner/crazy-arcade.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+
+                            </div>
+                            <div class="img">
+                                <img src="Images/banner/furry-frenzy.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+
+                            </div>
+                            <div class="img">
+                                <img src="Images/banner/rumble.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+
+                            </div>
+                            <div class="img">
+                                <img src="Images/banner/townkins.png" alt="">
+                                <a href=""><button id="btn-play">Play Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contest">
+                <div class="content">
+                    <h2><ion-icon name="game-controller-outline"></ion-icon>GAME PLUS CONTEST</h2>
+                    <h1>THIẾT KẾ GIAO DIỆN WEB GAME</h1>
+                    <h2>Giải thưởng lên đến 150.000.000vnd</h2>
+                    <p>Bắt đầu thử sức với chính bản thân ngay thôi.</p>
+                    <a id="btn-contest-1" href="">Learn More</a>
+                    <label id="btn-contest-2" for="">Join Now</label>
+                </div>
+                <div class="img"><img src="Images/notfication/contest-game-designer.png" alt=""></div>
+            </div>
+
+            <div class="outstanding">
+                <h2>FEATURED GAME</h2>
+                <div class="items">
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-among-us.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Among US</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-free-fire.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Free Fire</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-PUPG.png" alt=""></div>
+                        <div class="play-now">
+                            <p>PUBG MOBILE</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-Subway Surfers.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Subway Surfers</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-bau-cua-tom-ca.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Bầu cua tôm cá</p>
+                            <a href="Bau_Cua_Tom_Ca/game_BauCuaTomCa.html"><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-flappy-bird.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Flappy Bird</p>
+                            <a href="Flapy Bird/game_FlapyBird.html"><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/LogoGameSnake.png" alt=""></div>
+                        <div class="play-now">
+                            <p>A Hunting Snake</p>
+                            <a href="Snake/index.html"><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-among-us.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Among US</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-free-fire.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Free Fire</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-T-Red-no internet.png" alt=""></div>
+                        <div class="play-now">
+                            <p>T Red No Internet</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </article>
+        <input type="checkbox" id="out-contest">
+
+        <div class="notification">
+            <div class="content">
+                <label for="out-contest"><ion-icon name="close-outline"></ion-icon></label>
+            </div>
+        </div>
+
+        <input type="checkbox" id="out-login">
+        <div class="form-login" id="form-login">
+            <label id="out-login-1" onclick="outlogin()" for="out-login"><ion-icon name="close-outline"
+                    id="out-login"></ion-icon></label>
+            <div class="box-value">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+                <form action="">
+                    <div class="box">
+                        <label id="out-login-2" onclick="outlogin()" for="out-login"><ion-icon name="close-outline"
+                                id="out-login"></ion-icon></label>
+
+                        <h2>Login</h2>
+                        <div class="input-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="text" required>
+                            <label for="">Mail</label>
+                        </div>
+                        <div class="input-box">
+                            <ion-icon name="key-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="remember">
+                            <label for=""><input type="checkbox">Remember Me </label>
+                            <a href="">Forget Password</a>
+                        </div>
+
+                        <button id="btn">Login</button>
+
+                        <div class="register">
+                            <p>You don't have an account <label onclick="showsignup()" href="">SignUp</label></p>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="form-sign-up" id="form-sign-up">
+            <label id="out-login-1" onclick="outlogin()" for="out-login"><ion-icon name="close-outline"
+                    id="out-login"></ion-icon></label>
+            <div class="box-value">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+                <form action="">
+                    <div class="box">
+                        <label id="out-login-2" onclick="outlogin()" for="out-login"><ion-icon name="close-outline"
+                                id="out-login"></ion-icon></label>
+
+                        <h2>Sign Up</h2>
+                        <div class="input-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="text" required>
+                            <label for="">Mail</label>
+                        </div>
+                        <div class="input-box">
+                            <ion-icon name="key-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="input-box">
+                            <ion-icon name="key-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="">Confirm-Password</label>
+                        </div>
+                        <div class="remember">
+                            <label for=""><input type="checkbox">Remember Me </label>
+                            <a href="">Forget Password</a>
+                        </div>
+
+                        <button id="btn">Sign Up</button>
+
+                        <div class="register">
+                            <p>You don't have an account <label onclick="outsignup()">Login</label></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <button onclick="scrollToTop()" class="back-to-top"><ion-icon
+                name="arrow-up-circle-outline"></ion-icon></button>
+
+        <footer>
+            <div id="messeger">
+                <p><ion-icon name="game-controller-outline"></ion-icon>GAME PLUS advises you: Play healthy games, have
+                    fun, arrange your time reasonably, enjoy a healthy
+                    life, study well and work well </p>
+            </div>
+
+            <div class="content">
+                <div class="more-information">
+                    <p>
+                    <h3>More Information</h3>
+                    </p>
+                    <p> <a href="">arena</a></p>
+                    <p><a href="">Get the app</a></p>
+                    <p><a href="">Help</a></p>
+                </div>
+                <div class="abuot-us">
+                    <p>
+                    <h3>Abuot Us</h3>
+                    </p>
+                    <p><a href="">About</a></p>
+                    <p><a href="">Rules</a></p>
+                    <p><a href="">Security</a></p>
+                    <p><a href="">Contact</a></p>
+                </div>
+                <div class="follow" id="last">
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+            </div>
+
+            <div id="messeger-end">
+                <p>© 2023 Game Plus. Nguyễn Gia Hậu. 2224802010439</p>
+            </div>
+        </footer>
+
+        <div class="form-contact" id="form-contact">
+            <div class="call">
+                <a href="tel:0346269996"><ion-icon name="call-outline"></ion-icon></a>
+            </div>
+            <div class="mail">
+                <a href="mailto:2224802010349@student.tdmu.edu.vn"><ion-icon
+                        name="mail-outline"></ion-icon></ion-icon></a>
+            </div>
+        </div>
+        <button onclick="showFormContact()" id="btn-form-contact">Contact</button>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
