@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HOME PAGE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Style/account.css'>
+    <script src="JS/account.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1><a href="Home.html"><ion-icon name="game-controller-outline"></ion-icon>Game Plus</a></h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon"><ion-icon onclick="change_icon()" id="icon-menu"
+                        name="menu-outline"></ion-icon></label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Game.html">Game</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <div class="form-search">
+                <form action="">
+                    <input type="search" placeholder="search...">
+                    <button>Tìm kiếm</button>
+                </form>
+            </div>
+        </header>
+        <article>
+
+            <div class="information-people">
+                <div class="information-value">
+                    <div class="avatar">
+                        <img src="Images/avatar/avatar.jpg" alt="">
+                    </div>
+                    <div class="personal-information">
+                        <h2 style="text-align:center"><span id="name-personal">Nguyễn Gia Hậu</span> <ion-icon onclick="ShowUpdateinformation()"
+                                id="change-information" name="settings-outline"></ion-icon></h2>
+                    </div>
+                    <table cellspacing="5" cellpadding="5">
+                        <tr>
+                            <td colspan="2" style="text-align:center"><img src="Images/icon-top/gold.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Xếp hạng:</td>
+                            <td id="ranting">Chiến thần</td>
+                        </tr>
+                        <tr>
+                            <td>Ngày sinh:</td>
+                            <td id="birtday">05/08/2004</td>
+                        </tr>
+                        <tr>
+                            <td>Địa chỉ:</td>
+                            <td id="address">Đại học Thủ Dầu Một</td>
+                        </tr>
+                        <tr>
+                            <td>Mail:</td>
+                            <td id="mail">2224802010349@student.tdmu.edu.vn</td>
+                        </tr>
+                        <tr>
+                            <td>Số điện thoại:</td>
+                            <td id="number">0346269996</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="achievements">
+                <h1 style="text-align:center">Achievements</h1>
+                <ul>
+                    <li>Đạt danh hiệu người chơi xuất sắc nhất among us.</li>
+                    <li>Vượt ải khó trong T Red No Internet.</li>
+                    <li>Top cao trong cuộc thi chinh phục flappy bird game flappy bird.</li>
+                    <li>Top 2 cuộc thi sáng tạo thiết kế giao diện game mùa 1.</li>
+                    <li>Đẹp trai nhất cộng đồng GAME PLUS.</li>
+                </ul>
+                <h1 style="text-align:center">Proficient Game</h1>
+                <div class="proficient-game">
+                    <div class="item-game">
+                        <div class="img">
+                            <img src="Images/logo/logo-flappy-bird.png" alt="">
+                        </div>
+                        <h2>flappy Bird</h2>
+                    </div>
+                    <div class="item-game">
+                        <div class="img">
+                            <img src="Images/logo/logo-Subway Surfers.png" alt="">
+                        </div>
+                        <h2>Subway Surfers</h2>
+                    </div>
+                    <div class="item-game">
+                        <div class="img">
+                            <img src="Images/logo/logo-T-Red-no internet.png" alt="">
+                        </div>
+                        <h2>T-Red-no internet</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </article>
+        <div class="form-infomation-personal" id="form-infomation-personal">
+            <label id="out-update-1" for="show-update-information" onclick="outUpdateinformation()"><ion-icon
+                    name="close-outline"></ion-icon></label>
+            <div class="form-box-information">
+                <form action="">
+                    <label id="out-update-2" for="show-update-information"><ion-icon
+                            name="close-outline"></ion-icon></label>
+                    <div class="box-information-value">
+                        <h2>Update Personal Information</h2>
+                        <div class="input-information-box">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" id="change-name">
+                            <label for="">name</label>
+                        </div>
+                        <div class="input-information-box">
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                            <input type="text" id="change-address">
+                            <label for="">Address</label>
+                        </div>
+                        <div class="input-information-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="change-mail">
+                            <label for="">Mail</label>
+                        </div>
+                        <div class="input-information-box">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <input type="number" id="change-phone">
+                            <label for="">Number Phone</label>
+                        </div>
+                        <label onclick="changeInformation()" id="btn-update-information">update</label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+        <footer>
+            <div id="messeger">
+                <p><ion-icon name="game-controller-outline"></ion-icon>GAME PLUS advises you: Play healthy games, have
+                    fun, arrange your time reasonably, enjoy a healthy
+                    life, study well and work well </p>
+            </div>
+
+            <div class="content">
+                <div class="more-information">
+                    <p>
+                    <h3>More Information</h3>
+                    </p>
+                    <p> <a href="">arena</a></p>
+                    <p><a href="">Get the app</a></p>
+                    <p><a href="">Help</a></p>
+                </div>
+                <div class="abuot-us">
+                    <p>
+                    <h3>Abuot Us</h3>
+                    </p>
+                    <p><a href="">About</a></p>
+                    <p><a href="">Rules</a></p>
+                    <p><a href="">Security</a></p>
+                    <p><a href="">Contact</a></p>
+                </div>
+                <div class="follow" id="last">
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+            </div>
+
+            <div id="messeger-end">
+                <p>© 2023 Game Plus. Nguyễn Gia Hậu. 2224802010439</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

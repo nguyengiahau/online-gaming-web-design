@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GAME PAGE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Style/product.css'>
+    <script defer src="JS/product.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1><a href="Home.html"><ion-icon name="game-controller-outline"></ion-icon>Game Plus</a></h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon"><ion-icon onclick="change_icon()" id="icon-menu"
+                        name="menu-outline"></ion-icon></label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Game.html">Game</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <div class="form-search">
+                <form action="">
+                    <input type="search" placeholder="search...">
+                    <button>Tìm kiếm</button>
+                </form>
+            </div>
+        </header>
+        <article>
+            <section>
+                <div class="game">
+                    <div class="play-game" id="img-game-play">
+                        <div class="img">
+                            <img src="Images/logo/call_of_duty_mobile.png" alt="">
+                            <button id="btn-play-now">Play Now</button>
+                            <h2>Call Of Duty</h2>
+                        </div>
+                    </div>
+
+                    <div class="instruct">
+                        <div class="information-game-play">
+                            <h3>About</h3>
+                            <p>Call of Duty là một tựa game về đề tài Chiến tranh thế giới thứ hai, sử dụng engine Quake
+                                III Arena (của studio id Tech 3). Game được phát hành vào ngày 29 tháng 10 năm 2003 bởi
+                                Activision và được phát triển bởi studio Infinity Ward. Game mô phỏng cuộc chiến tranh
+                                trên bộ trong Chiến tranh thế giới thứ hai.</p>
+                            <h3>How To Play</h3>
+                            <p>
+                            <ul>
+                                <li><img src="Images/logo/notebook.png" alt=""> Trên máy tính sử dụng<img
+                                        src="Images/logo/mouse_left.png" alt=""> để chơi</li>
+                                <li><img src="Images/logo/mobile.png" alt=""> Trên điện thoại <img
+                                        src="Images/logo/hand.png" alt=""> chạm và xoay ngang màn hình <img
+                                        src="Images/logo/xoay-ngang.png" alt=""> để
+                                    chơi
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="Images/logo/Strategy Game/call-of-duty.jfif" alt="">
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                    <h2>top game</h2>
+                    <div class="items-top-game">
+                        <div class="item-top">
+                            <div class="img">
+                                <img src="Images/logo/call_of_duty_mobile.png" alt="">
+                            </div>
+                            <div class="content-top">
+                                <h2>Call Of Duty Mobile</h2>
+                                <h3>Đánh giá:<span id="rank">4.5</span><ion-icon name="star"></ion-icon></h3>
+                            </div>
+                        </div>
+                        <div class="item-top">
+                            <div class="img">
+                                <img src="Images/logo/533fe7a7d8513431aeab1f12f1c5c7f3.jpg" alt="">
+                            </div>
+                            <div class="content-top">
+                                <h2>Call Of Duty Mobile</h2>
+                                <h3>Đánh giá:<span id="rank">4.5</span><ion-icon name="star"></ion-icon></h3>
+                            </div>
+                        </div>
+                        <div class="item-top">
+                            <div class="img">
+                                <img src="Images/logo/asphalt_8_car_racing_game.jpg" alt="">
+                            </div>
+                            <div class="content-top">
+                                <h2>Call Of Duty Mobile</h2>
+                                <h3>Đánh giá:<span id="rank">4.5</span><ion-icon name="star"></ion-icon></h3>
+                            </div>
+                        </div>
+                        <div class="item-top">
+                            <div class="img">
+                                <img src="Images/logo/logo-free-fire.png" alt="">
+                            </div>
+                            <div class="content-top">
+                                <h2>Call Of Duty Mobile</h2>
+                                <h3>Đánh giá:<span id="rank">4.5</span><ion-icon name="star"></ion-icon></h3>
+                            </div>
+                        </div>
+                        <div class="item-top">
+                            <div class="img">
+                                <img src="Images/logo/asphalt_8_car_racing_game.jpg" alt="">
+                            </div>
+                            <div class="content-top">
+                                <h2>Call Of Duty Mobile</h2>
+                                <h3>Đánh giá:<span id="rank">4.5</span><ion-icon name="star"></ion-icon></h3>
+                            </div>
+                        </div>
+                        <div class="item-top">
+                            <div class="img">
+                                <img src="Images/logo/Strategy Game/hoa-qua-dai-chien-200-size-111x111-znd.jpg" alt="">
+                            </div>
+                            <div class="content-top">
+                                <h2>Call Of Duty Mobile</h2>
+                                <h3>Đánh giá:<span id="rank">4.5</span><ion-icon name="star"></ion-icon></h3>
+                            </div>
+                        </div>
+                        <div class="item-top">
+                            <div class="img">
+                                <img src="Images/logo/Strategy Game/the-gioi-minecraft-640.jpg" alt="">
+                            </div>
+                            <div class="content-top">
+                                <h2>Call Of Duty Mobile</h2>
+                                <h3>Đánh giá:<span id="rank">4.5</span><ion-icon name="star"></ion-icon></h3>
+                            </div>
+                        </div>
+                        <div class="item-top">
+                            <div class="img">
+                                <img src="Images/logo/logo-T-Red-no internet.png" alt="">
+                            </div>
+                            <div class="content-top">
+                                <h2>Call Of Duty Mobile</h2>
+                                <h3>Đánh giá:<span id="rank">4.5</span><ion-icon name="star"></ion-icon></h3>
+                            </div>
+                        </div>
+                        <div class="item-top">
+                            <div class="img">
+                                <img src="Images/logo/logo-flappy-bird.png" alt="">
+                            </div>
+                            <div class="content-top">
+                                <h2>Call Of Duty Mobile</h2>
+                                <h3>Đánh giá:<span id="rank">4.5</span><ion-icon name="star"></ion-icon></h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </aside>
+            </section>
+            <div class="outstanding">
+                <h2 style="text-align: center;">Similar Games</h2>
+                <div class="items">
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-among-us.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Among US</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-free-fire.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Free Fire</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-among-us.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Among US</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-free-fire.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Free Fire</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-PUPG.png" alt=""></div>
+                        <div class="play-now">
+                            <p>PUBG MOBILE</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-Subway Surfers.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Subway Surfers</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-bau-cua-tom-ca.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Bầu cua tôm cá</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-flappy-bird.png" alt=""></div>
+                        <div class="play-now">
+                            <p>Flappy Bird</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/LogoGameSnake.png" alt=""></div>
+                        <div class="play-now">
+                            <p>A Hunting Snake</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="Images/logo/logo-T-Red-no internet.png" alt=""></div>
+                        <div class="play-now">
+                            <p>T Red No Internet</p>
+                            <a href=""><button id="btn-play">Play Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        <input type="checkbox" id="out-contest">
+
+
+
+        <input type="checkbox" id="out-login">
+        <div class="form-login" id="form-login">
+            <label id="out-login-1" onclick="outlogin()" for="out-login"><ion-icon name="close-outline"
+                    id="out-login"></ion-icon></label>
+            <div class="box-value">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+                <form action="">
+                    <div class="box">
+                        <label id="out-login-2" onclick="outlogin()" for="out-login"><ion-icon name="close-outline"
+                                id="out-login"></ion-icon></label>
+                        <h2>Login</h2>
+                        <div class="input-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="text" required>
+                            <label for="">Mail</label>
+                        </div>
+                        <div class="input-box">
+                            <ion-icon name="key-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="remember">
+                            <label for=""><input type="checkbox">Remember Me </label>
+                            <a href="">Forget Password</a>
+                        </div>
+
+                        <button id="btn">Login</button>
+
+                        <div class="register">
+                            <p>You don't have an account <label onclick="showsignup()" href="">SignUp</label></p>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="form-sign-up" id="form-sign-up">
+            <label id="out-login-1" onclick="outlogin()" for="out-login"><ion-icon name="close-outline"
+                    id="out-login"></ion-icon></label>
+            <div class="box-value">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+                <form action="">
+                    <div class="box">
+                        <label id="out-login-2" onclick="outlogin()" for="out-login"><ion-icon name="close-outline"
+                                id="out-login"></ion-icon></label>
+
+                        <h2>Sign Up</h2>
+                        <div class="input-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="text" required>
+                            <label for="">Mail</label>
+                        </div>
+                        <div class="input-box">
+                            <ion-icon name="key-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="input-box">
+                            <ion-icon name="key-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="">Confirm-Password</label>
+                        </div>
+                        <div class="remember">
+                            <label for=""><input type="checkbox">Remember Me </label>
+                            <a href="">Forget Password</a>
+                        </div>
+
+                        <button id="btn">Sign Up</button>
+
+                        <div class="register">
+                            <p>You don't have an account <label onclick="outsignup()">Login</label></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <button onclick="scrollToTop()" class="back-to-top"><ion-icon
+                name="arrow-up-circle-outline"></ion-icon></button>
+
+        <footer>
+            <div id="messeger">
+                <p><ion-icon name="game-controller-outline"></ion-icon>GAME PLUS advises you: Play healthy games, have
+                    fun, arrange your time reasonably, enjoy a healthy
+                    life, study well and work well </p>
+            </div>
+
+            <div class="content">
+                <div class="more-information">
+                    <p>
+                    <h3>More Information</h3>
+                    </p>
+                    <p> <a href="">arena</a></p>
+                    <p><a href="">Get the app</a></p>
+                    <p><a href="">Help</a></p>
+                </div>
+                <div class="abuot-us">
+                    <p>
+                    <h3>Abuot Us</h3>
+                    </p>
+                    <p><a href="">About</a></p>
+                    <p><a href="">Rules</a></p>
+                    <p><a href="">Security</a></p>
+                    <p><a href="">Contact</a></p>
+                </div>
+                <div class="follow" id="last">
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+            </div>
+
+            <div id="messeger-end">
+                <p>© 2023 Game Plus. Nguyễn Gia Hậu. 2224802010439</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,898 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav input {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#current {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.form-search {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="search"] {
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 5px 15px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.about h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btn-1,
+#btn-2 {
+    display: inline-block;
+    font-size: 24px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+
+#btn-2 {
+    background-color: #007bff;
+}
+
+#btn-2 {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+#btn-1:hover {
+    background-color: #007bff;
+}
+
+#btn-1:hover~#btn-2 {
+    background-color: #6c757d;
+}
+
+.content-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    overflow: hidden;
+}
+
+.slide-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide infinite 50s;
+    margin-left: 0;
+}
+
+.slide-show .img {
+    position: relative;
+    padding: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.slide-show .img:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-show .img:hover #btn-play {
+    display: block;
+}
+
+.slide-show .img:hover img {
+    opacity: 0.2;
+}
+
+.slide-show #btn-play {
+    cursor: pointer;
+    display: none;
+    border: none;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    z-index: 1000;
+}
+
+.slide-show #btn-play:hover {
+    text-decoration: underline;
+}
+
+@keyframes slide {
+    10% {
+        margin-left: -500px;
+    }
+
+    20% {
+        margin-left: -1500px;
+    }
+
+    30% {
+        margin-left: -1500px;
+    }
+
+    40% {
+        margin-left: -1500px;
+    }
+
+    50% {
+        margin-left: -2500px;
+    }
+
+    60% {
+        margin-left: -2500px;
+    }
+
+    70% {
+        margin-left: -2500px;
+    }
+
+    80% {
+        margin-left: -3500px;
+    }
+
+    90% {
+        margin-left: -3500px;
+    }
+
+    100% {
+        margin-left: -3500px;
+    }
+
+}
+
+.contest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.contest .content {
+    width: 40%;
+}
+
+.contest .img {
+    width: 60%;
+    overflow: hidden;
+}
+.contest .img img{
+    width: 100%;
+}
+#btn-contest-1,
+#btn-contest-2 {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#btn-contest-2 {
+    background-color: #007bff;
+}
+
+#btn-contest-2 {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+#btn-contest-1:hover {
+    background-color: #007bff;
+}
+
+#btn-contest-1:hover~#btn-contest-2 {
+    background-color: #6c757d;
+}
+
+
+.outstanding {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+}
+
+.outstanding .items {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.outstanding .items .item {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.outstanding .items .item .img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.outstanding .items .item img {
+    width: 100%;
+}
+
+.play-now {
+    position: absolute;
+    bottom: -15%;
+    background-color: #6c757d;
+    width: 200px;
+}
+
+.play-now p {
+    color: white;
+}
+
+.outstanding .items .item:hover .play-now {
+    bottom: 0;
+}
+
+.outstanding .items .item button {
+    border: none;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.outstanding .items .item button:hover {
+    text-decoration: underline;
+}
+
+
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: fixed;
+    padding: 20px 20px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1000;
+    font-size: 1em;
+}
+
+.notification #out-contest,
+.notification label {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.notification ion-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#out-contest {
+    display: none;
+}
+
+#out-contest:checked~.notification {
+    display: none;
+}
+
+.notification .content {
+    background: url(wellcome.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+
+
+.back-to-top {
+    position: fixed;
+    display: flex;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #6c757d;
+    padding: 20px;
+    color: white;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: white;
+    color: #6c757d;
+}
+
+.back-to-top ion-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.form-login {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0;
+}
+
+.form-login ion-icon {
+    right: 0;
+    bottom: 5px;
+    position: absolute;
+    color: white;
+}
+
+.box-value {
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+}
+
+form h2 {
+    text-align: center;
+    color: white;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+#out-login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#out-login-2 {
+    display: none;
+}
+
+.remember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remember label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.remember input {
+    display: flex;
+    width: 10%;
+}
+
+form a {
+    color: #333;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.register label {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.register label:hover {
+    text-decoration: underline;
+}
+
+.form-login button {
+    width: 250px;
+    font-weight: 700;
+}
+
+
+
+.form-sign-up {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    transition: all 1s ease-in-out;
+}
+
+.form-sign-up ion-icon {
+    right: 0;
+    bottom: 5px;
+    position: absolute;
+}
+
+.box-value {
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+}
+
+form h2 {
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+#out-login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#out-login-2 {
+    display: none;
+}
+
+.remember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remember label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remember input {
+    display: flex;
+    width: 10%;
+}
+
+.form-sign-up a {
+    color: #333;
+    text-decoration: none;
+}
+
+.form-sign-up a:hover {
+    text-decoration: underline;
+}
+
+.form-sign-up button {
+    width: 250px;
+    font-weight: 700;
+}
+
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer #messeger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #messeger-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+footer .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content div {
+    text-align: center;
+    width: 30%;
+}
+
+footer .content #last {
+    border-right: none;
+}
+
+footer .content div a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .content div a:hover {
+    text-decoration: underline;
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+.follow {
+    display: inline-block;
+}
+
+.follow a ion-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+#btn-form-contact {
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+
+#btn-form-contact:hover {
+    animation: shake 1s infinite;
+}
+
+.form-contact {
+    display: none;
+    padding: 10px 15px;
+    width: 30px;
+    height: auto;
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+    text-align: center;
+}
+
+.form-contact a ion-icon {
+    border-radius: 10px;
+    margin-top: 5px;
+    color: white;
+    background-color: #333;
+    padding: 10px 15px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(-5px, 0);
+    }
+
+    20% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(5px, 0);
+    }
+
+    40% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-3px, 0);
+    }
+
+    60% {
+        transform: translate(0, 0);
+    }
+
+    70% {
+        transform: translate(3px, 0);
+    }
+
+    80% {
+        transform: translate(0, 0);
+    }
+
+    90% {
+        transform: translate(-2px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-search {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0;
+        left: -120%;
+        background-color: #333;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    nav li {
+        text-align: center;
+        margin: 0;
+        width: 100px;
+        height: 30px;
+    }
+
+    nav li:hover {
+        background-color: white;
+        color: #6c757d;
+    }
+
+    nav li:hover a {
+        color: #6c757d;
+        text-decoration: none;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        z-index: 5;
+    }
+
+    #menu-toggle:checked~.menu {
+        left: 0;
+    }
+
+
+    .input-box {
+        width: 100%;
+    }
+
+    .box-value {
+        width: 100%;
+        margin-left: 0;
+        z-index: 100;
+        height: 100vh;
+    }
+
+    #out-login-2 {
+        display: block;
+    }
+
+    .form-login button {
+        width: 100%;
+    }
+}

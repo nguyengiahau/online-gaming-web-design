@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: wheat;
+    width: 500px;
+    margin: 50px auto;
+}
+.top{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+   width: 33.33%;
+   padding: 15px;
+}
+.img{
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+   cursor: pointer;
+}
+.price{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#scores{
+    border: 1px black solid;
+}
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result{
+    padding: 15px;
+   display: flex;
+   flex-wrap: wrap;
+    width: 80%;
+}
+.result img{
+    width: 33.33%;
+ }
+ 
